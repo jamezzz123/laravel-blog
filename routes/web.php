@@ -13,6 +13,11 @@ Route::get('posts/create', [PostController::class, 'create'])
     ->middleware(['auth', 'verified'])
     ->name('create-post');
 
+
+Route::get('posts/{id}', [PostController::class, 'show'])
+    ->middleware(['auth', 'verified'])
+    ->name('get-post');
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
