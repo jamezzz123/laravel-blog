@@ -9,7 +9,7 @@
         <p>{{ $content }}</p>
 
         <div class="mt-6">
-            <p class="text-lg text-gray-900">Comments</p>
+            <p class="text-lg text-gray-900 font-bold underline">Comments</p>
         </div>
         
         <livewire:posts.comments.list :postId="$id" />

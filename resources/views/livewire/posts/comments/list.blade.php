@@ -28,10 +28,10 @@ new class extends Component
 }; ?>
 
 
-<div class="mt-6 bg-white shadow-sm rounded-lg divide-y p-1">
+<div class="mt-3 shadow-sm rounded-lg divide-y p-1">
     @foreach ($comments as $comment)
     <a wire:key="{{ $comment->id }}">
-        <div class="p-2 flex space-x-2">
+        <div class="p-2 flex space-x-2 bg-white rounded-lg my-1">
             <div class="flex-1">
                 <div class="flex justify-between items-center">
                     <div>
