@@ -17,6 +17,8 @@ new class extends Component
         auth()->user()->posts()->create($validated);
         $this->content = '';
         $this->title = '';
+
+        $this->dispatch('post-created');
     } 
 }; ?>
 
