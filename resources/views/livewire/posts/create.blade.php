@@ -5,8 +5,7 @@ use Livewire\Volt\Component;
 
 new class extends Component
 {
-    //
-    #[Validate('required|string|max:255')]
+    #[Validate('required|string')]
     public string $content = '';
     #[Validate('required')]
     public string $title = '';
@@ -18,7 +17,8 @@ new class extends Component
         $this->content = '';
         $this->title = '';
 
-        $this->dispatch('post-created');
+        // $this->dispatch('post-created');
+        redirect()->route('posts');
     } 
 }; ?>
 

@@ -13,7 +13,17 @@ class PostController extends Controller
      */
      public function index(): View
      {
-        return view('post', [
+        return view('post.index', [
+            //
+        ]);
+     }
+
+     /**
+     * Display a listing of the resource. 
+     */
+     public function create(): View
+     {
+        return view('post.create', [
             //
         ]);
      }
