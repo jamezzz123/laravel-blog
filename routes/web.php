@@ -3,7 +3,7 @@
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'welcome');
+Route::redirect('/', '/posts');
 
 Route::get('posts', [PostController::class, 'index'])
     ->middleware(['auth', 'verified'])
